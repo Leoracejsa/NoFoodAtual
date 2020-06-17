@@ -2,8 +2,9 @@
   "name": "nofood.api",
   "version": "1.0.0",
   "description": "Api feita em nodeJS para utilização do nosso aplicativo NoFood.",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
+    "start": "nodemon server.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Leonardo Ahmed",
