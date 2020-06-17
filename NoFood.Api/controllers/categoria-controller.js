@@ -35,6 +35,6 @@ categoriaController.prototype.getById = async(req, res) => {
 categoriaController.prototype.delete = async(req, res) => { 
     let deletado = await categoria.findByIdAndRemove(req.params.id);
     res.status(204).send(deletado);
-};
+}; 
 
 module.exports = categoriaController;
