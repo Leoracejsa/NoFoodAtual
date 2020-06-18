@@ -15,7 +15,7 @@ exports.post = async(repository, validationContract, req, res) => {
         res.status(500).send({message: 'Erro no processamento', error: err});
     }
 
-};
+}; 
 
 exports.put = async(repository, validationContract, req, res) => {
     try{
