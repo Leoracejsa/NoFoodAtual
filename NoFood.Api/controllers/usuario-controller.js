@@ -4,9 +4,11 @@ const repository = require('../repositories/usuario-repository');
 const validation = require('../bin/helpers/validation');
 const ctrlBase = require('../bin/base/controller-base');
 const _repo = new repository();
-const md5 = require('md5');
+
+//Dependências para geração do Token
 const jwt = require('jsonwebtoken');
 const variables = require('../bin/configuration/variables');
+const md5 = require('md5');
 
 function usuarioController(){
     
