@@ -17,7 +17,7 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 
 //Configurando a conexão com o banco de dados
-mongoose.connect(variables.Database.connection);
+mongoose.connect(variables.Database.connection, {useNewUrlParser: true, useUnifiedTopology: true});
 
 
 //Configurando as rotas
