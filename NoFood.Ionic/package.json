@@ -19,12 +19,15 @@
     "@angular/forms": "5.2.11",
     "@angular/platform-browser": "5.2.11",
     "@angular/platform-browser-dynamic": "5.2.11",
+    "@ionic-native/camera": "^5.27.0",
     "@ionic-native/core": "4.20.0",
     "@ionic-native/network": "^5.26.0",
     "@ionic-native/splash-screen": "4.20.0",
     "@ionic-native/status-bar": "4.20.0",
     "@ionic/storage": "2.2.0",
+    "cordova-android": "8.1.0",
     "cordova-ios": "^5.1.1",
+    "cordova-plugin-camera": "^4.1.0",
     "cordova-plugin-network-information": "^2.0.2",
     "ionic-angular": "3.9.9",
     "ionicons": "3.0.0",
@@ -51,10 +54,12 @@
       "cordova-plugin-device": {},
       "cordova-plugin-splashscreen": {},
       "cordova-plugin-ionic-webview": {},
-      "cordova-plugin-ionic-keyboard": {}
+      "cordova-plugin-ionic-keyboard": {},
+      "cordova-plugin-camera": {}
     },
     "platforms": [
-      "ios"
+      "ios",
+      "android"
     ]
   }
 }

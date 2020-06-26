@@ -1,11 +1,36 @@
-<ion-header>
-  <ion-navbar>
-    <ion-title>login</ion-title>
-  </ion-navbar>
-</ion-header>
+<ion-content padding class="backImage">
+  <div class="logo">
+    <img src="assets/imagens/icon-branco.png" alt="">
+    <span>NoFood</span>
+  </div>
 
-<ion-content padding>
-  <button ion-button block (click)="abrirCategoria()">
-    Efetuar Login    
-  </button>
+  <ion-list no-lines class="list-transparent">
+    <ion-item>
+      <ion-input [(ngModel)]="form.email" type="text" placeholder="E-mail"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-input [(ngModel)]="form.senha" type="password" placeholder="Senha"></ion-input>
+    </ion-item>
+  </ion-list>
+
+  <ion-grid>
+    <ion-row>
+      <button ion-button color="secondary" block round (click)="login()">
+        Efetuar Login
+      </button>
+    </ion-row>
+    <ion-row>
+      <button ion-button block outline round color="secondary" (click)="cadastrar()">
+        Cadastrar-se
+      </button>
+    </ion-row>
+  </ion-grid>
+
+  <ion-grid>
+    <ion-row>
+      <button ion-button clear block color="light">
+        Administrar Cadastros
+      </button>
+    </ion-row>
+  </ion-grid>
 </ion-content>

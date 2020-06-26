@@ -13,8 +13,8 @@ const usuarioRouter = require('../routes/usuario-router');
 //Criando/Invocando a API/Server Web do Express
 const app = express();
 
-app.use(bodyParser.json());
-app.use(bodyParser.urlencoded({ extended: false }));
+app.use(bodyParser.json({limit: '10mb'}));
+app.use(bodyParser.urlencoded({ limit: '10mb',extended: false }));
 
 //Configurando a conexão com o banco de dados
 mongoose.connect(variables.Database.connection, {useNewUrlParser: true, useUnifiedTopology: true});
