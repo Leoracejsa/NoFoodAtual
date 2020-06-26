@@ -9,6 +9,11 @@ import { SpinnerProvider } from '../providers/spinner/spinner';
 import { AlertProvider } from '../providers/alert/alert';
 import { HttpProvider } from '../providers/http/http';
 import { NetworkProvider } from '../providers/network/network';
+import { UsuarioProvider } from '../providers/usuario/usuario';
+import { HttpClientModule } from '@angular/common/http';
+import { CategoriaProvider } from '../providers/categoria/categoria';
+import { CameraProvider } from '../providers/camera/camera';
+import { Camera } from '@ionic-native/camera/ngx';
 
 @NgModule({
   declarations: [
@@ -17,6 +22,7 @@ import { NetworkProvider } from '../providers/network/network';
   ],
   imports: [
     BrowserModule,
+    HttpClientModule,
     IonicModule.forRoot(MyApp)
   ],
   bootstrap: [IonicApp],
@@ -31,7 +37,11 @@ import { NetworkProvider } from '../providers/network/network';
     SpinnerProvider,
     AlertProvider,
     HttpProvider,
-    NetworkProvider
+    NetworkProvider,
+    UsuarioProvider,
+    CategoriaProvider,
+    CameraProvider,
+    Camera, 
   ]
 })
 export class AppModule {}
