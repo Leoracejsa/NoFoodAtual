@@ -11,9 +11,12 @@
 
 <ion-content no-padding>
   <ion-list lines >
+<<<<<<< HEAD
     <ion-item text-wrapp *ngIf="lista.length == 0">
       Você não tem nenhuma categoria cadastrada.
     </ion-item>
+=======
+>>>>>>> 2a79de6caa918ba6f74583697b26e29ffe511d94
     <ion-item *ngFor="let item of lista" text-wrap (click)="addOrEdit(item)">
       {{item.titulo}}
     </ion-item>

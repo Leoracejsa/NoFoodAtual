@@ -1,3 +1,7 @@
+<<<<<<< HEAD
+=======
+import { HttpResultModel } from './../../app/models/HttpResultModel';
+>>>>>>> 2a79de6caa918ba6f74583697b26e29ffe511d94
 import { AlertProvider } from './../../providers/alert/alert';
 import { CategoriaProvider } from './../../providers/categoria/categoria';
 import { CameraProvider } from './../../providers/camera/camera';
@@ -30,6 +34,7 @@ export class AdmCategoriaPage {
         this.categoria = new CategoriaModel();
   }
 
+<<<<<<< HEAD
   async excluir(): Promise<void>{
     try {
       this.alertSrv.confirm('Excluir', `Deseja realmente excluir a categoria ${this.categoria.titulo}?`, async () =>{
@@ -47,6 +52,8 @@ export class AdmCategoriaPage {
 
   }
 
+=======
+>>>>>>> 2a79de6caa918ba6f74583697b26e29ffe511d94
   async salvar(): Promise<void>{
     let sucesso = false;
     if(this.categoria._id){
