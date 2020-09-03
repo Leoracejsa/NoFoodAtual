@@ -1,0 +1,24 @@
+<ion-header>
+  <ion-navbar color="primary">
+    <ion-title>Produtos</ion-title>
+    <ion-buttons right>
+      <button ion-button icon-only (click)="addOrEdit({})">
+        <ion-icon name="add"></ion-icon>
+      </button>
+    </ion-buttons>
+  </ion-navbar>
+</ion-header>
+
+<ion-content no-padding>
+  <ion-list lines *ngIf="!isLoading">
+    <ion-item text-wrapp *ngIf="lista.length == 0">
+      Você não tem nenhum produto cadastrado.
+    </ion-item>
+    <ion-item *ngFor="let item of lista" text-wrap (click)="addOrEdit(item)">
+      {{item.nome}}
+      <ion-note item-end>
+        {{ item.categoriaId.titulo }}
+      </ion-note>
+    </ion-item>
+  </ion-list>
+</ion-content>

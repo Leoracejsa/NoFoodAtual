@@ -29,7 +29,7 @@ export class CameraProvider {
 
           this.camera.getPicture(options).then(
             (imgData) => {
-              let base64Image = `data:image/jpeg;base64,${imgData}`
+              let base64Image = `data:image/jpeg;base64,` + imgData
               callback(base64Image);
             }, 
             err => {

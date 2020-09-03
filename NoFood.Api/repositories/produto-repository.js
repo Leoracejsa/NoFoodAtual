@@ -16,13 +16,16 @@ class produtoRepository{
     }
 
     async getAll(){
-        return await this._base.getAll();
+        return await this._base._model.find().populate('categoriaId', '_id titulo');
     }
 
     async getById(id){
         return await this._base.getById(id);
     }
 
+    async getByCategoriaId(id){
+        return await this._base._model.find({categoriaId: id});
+    }
     async delete(id){
         return await this._base.delete(id);
     }
